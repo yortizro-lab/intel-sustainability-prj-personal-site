@@ -7,13 +7,13 @@
 body {
     font-family: Arial, sans-serif;
     background: #f4f8fb;
-    color: #1f2937;
+    color: #abb5c4;
     line-height: 1.6;
 }
 
 /* Hero section */
 .hero {
-    background: linear-gradient(135deg, #0068b5, #00a3e0);
+    background: linear-gradient(135deg, #0068b5, #00a3e0), url("images/timeline 2.webp");
     color: white;
     text-align: center;
     padding: 70px 20px;
@@ -292,9 +292,50 @@ footer {
         text-align: center;
         padding: 20px;
     }
-    
+}
 
+/* Card flip */
 .timeline-card {
-    width: 90%;
-    margin: 10px 0;
+    height: 350px;
+    perspective: 1000px;
+}
+
+.timeline-card .card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+}
+
+.timeline-card .card-front,
+.timeline-card .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.timeline-card .card-front {
+    z-index: 2;
+    background: white;
+}
+
+.timeline-card .card-front img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.timeline-card .card-back {
+    transform: rotateY(180deg);
+    background: white;
+    padding: 25px;
+}
+
+.timeline-card:hover .card-inner {
+    transform: rotateY(180deg);
 }

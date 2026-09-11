@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intel Sustainability Through the Ages</title>
     <link rel="stylesheet" href="style.css">
-</head>
+
 
 <body>
 
     <header class="hero">
-        <p class="intel">intel</p>
-        <h1>SUSTAINABILITY<br>THROUGH THE AGES</h1>
+        <p class="intel">Intel</p>
+        <h1>Sustainability<br>Through The Ages</h1>
         <p>
             Explore Intel's journey through time and discover how
             innovation has shaped a more sustainable future.
@@ -22,73 +22,141 @@
         <h2>Intel's Sustainability Timeline</h2>
 
         <p class="instruction">
-            Scroll to view the timeline | Hover over cards to learn more
+            Scroll to view the timeline | Flip cards to learn more
         </p>
 
         <section class="timeline">
 
-            <article class="timeline-card">
-                <span class="year">1968</span>
-                <h3>Intel Begins</h3>
-                <p>
-                    Intel was founded and began its journey in
-                    semiconductor technology and innovation.
-                </p>
-            </article>
+   <article class="timeline-card">
 
-            <article class="timeline-card">
-                <span class="year">1990s</span>
-                <h3>Environmental Focus</h3>
-                <p>
-                    Intel increased its focus on reducing waste,
-                    conserving resources, and protecting the environment.
-                </p>
-            </article>
+    <div class="card-inner">
 
-            <article class="timeline-card">
-                <span class="year">2000s</span>
-                <h3>Renewable Energy</h3>
-                <p>
-                    Intel expanded its environmental programs and
-                    increased its use of renewable energy.
-                </p>
-            </article>
+        <div class="card-front">
+            <img src="images/intel-1968.jpg" alt="Early Intel Technology">
+            <span class="year">1968</span>
+        </div>
 
-            <article class="timeline-card">
-                <span class="year">2010s</span>
-                <h3>Growing Sustainability Goals</h3>
-                <p>
-                    Intel established larger sustainability goals
-                    involving energy, water, and waste reduction.
-                </p>
-            </article>
+        <div class="card-back">
+            <span class="year">1968</span>
+            <h3>Intel Begins</h3>
+            <p>
+                Intel was founded and began its journey in
+                semiconductor technology and innovation.
+            </p>
 
-            <article class="timeline-card">
-                <span class="year">2020s</span>
-                <h3>A More Sustainable Future</h3>
-                <p>
-                    Intel continues working toward responsible
-                    manufacturing, renewable energy, water conservation,
-                    and reducing its environmental impact.
-                </p>
-            </article>
+        </div>
 
-            <article class="timeline-card">
-                <span class="year">Future</span>
-                <h3>Innovation Continues</h3>
-                <p>
-                    Intel continues developing technology while working
-                    toward a more sustainable future.
-                </p>
-            </article>
+    </div>
+
+</article>
+<article class="timeline-card">
+    <div class="card-inner">
+
+        <div class="card-front">
+            <img src="images/1990s.webp" alt="Intel Environmental Focus">
+            <span class="year">1990s</span>
+        </div>
+
+        <div class="card-back">
+            <span class="year">1990s</span>
+            <h3>Environmental Focus</h3>
+            <p>
+                Intel increased its focus on reducing waste,
+                conserving resources, and protecting the environment.
+
+            </p>
+        </div>
+
+    </div>
+</article>
+<article class="timeline-card">
+    <div class="card-inner">
+
+        <div class="card-front">
+            <img src="images/2000s.webp" alt="Intel Renewable Energy">
+            <span class="year">2000s</span>
+        </div>
+
+        <div class="card-back">
+            <span class="year">2000s</span>
+            <h3>Renewable Energy</h3>
+            <p>
+                Intel expanded its environmental programs
+                and increased its use of renewable energy.
+            </p>
+        </div>
+
+    </div>
+</article>
+<article class="timeline-card">
+    <div class="card-inner">
+
+        <div class="card-front">
+            <img src="images/2010.webp" alt="Intel Sustainability Goals">
+            <span class="year">2010s</span>
+        </div>
+
+        <div class="card-back">
+            <span class="year">2010s</span>
+            <h3>Growing Sustainability Goals</h3>
+            <p>
+                Intel established long-term sustainability goals
+                focused on renewable energy, water conservation,
+                and waste reduction.
+            </p>
+        </div>
+
+    </div>
+</article>
+<article class="timeline-card">
+    <div class="card-inner">
+
+        <div class="card-front">
+            <img src="images/2020.webp" alt="Intel Sustainability Progress">
+            <span class="year">2020s</span>
+        </div>
+
+        <div class="card-back">
+            <span class="year">2020s</span>
+            <h3>Sustainability Progress</h3>
+            <p>
+                Intel continues working toward responsible
+                manufacturing, renewable energy, water conservation,
+                and reducing its environmental impact.
+            </p>
+        </div>
+
+    </div>
+</article>
+<article class="timeline-card">
+    <div class="card-inner">
+
+        <div class="card-front">
+            <img src="images/future.webp" alt="Intel Sustainability Future">
+            <span class="year">Future</span>
+        </div>
+
+        <div class="card-back">
+            <span class="year">Future</span>
+            <h3>Innovation Continues</h3>
+            <p>
+                Intel continues developing technology while working
+                toward a more sustainable future.
+            </p>
+        </div>
+
+    </div>
+</article>
+<script>
+document.querySelectorAll('.timeline-card').forEach(function(card) {
+    card.addEventListener('click', function() {
+        card.querySelector('.card-inner').classList.toggle('flipped');
+    });
+});
+</script>
 
         </section>
     </main>
-
-    <footer>
-        <p>Intel Sustainability Through the Ages</p>
-        <p>Created by Yashira Ortiz</p>
-    </footer>
 
 </body>
 </html>
