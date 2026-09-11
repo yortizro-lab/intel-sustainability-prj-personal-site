@@ -292,4 +292,9 @@ footer {
         text-align: center;
         padding: 20px;
     }
+    
+
+.timeline-card {
+    width: 90%;
+    margin: 10px 0;
 }
