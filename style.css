@@ -243,4 +243,51 @@ footer {
         text-align: center;
         padding: 20px;
     }
+}/* Responsive design - tablets */
+@media (max-width: 768px) {
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .timeline-card {
+        width: 90%;
+        padding: 25px;
+    }
+}
+
+/* Responsive design - phones */
+@media (max-width: 480px) {
+    .hero {
+        padding: 40px 15px;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .timeline-card {
+        width: 95%;
+        padding: 20px;
+    }
+
+    body {
+        font-size: 15px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+    }
 }
