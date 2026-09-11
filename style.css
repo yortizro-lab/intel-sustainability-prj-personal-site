@@ -243,7 +243,8 @@ footer {
         text-align: center;
         padding: 20px;
     }
-}/* Responsive design - tablets */
+}/* RESPONSIVE DESIGN */
+
 @media (max-width: 768px) {
     .hero {
         padding: 50px 20px;
@@ -259,12 +260,16 @@ footer {
 
     .timeline-card {
         width: 90%;
+        margin: 20px auto;
         padding: 25px;
     }
 }
 
-/* Responsive design - phones */
 @media (max-width: 480px) {
+    body {
+        font-size: 15px;
+    }
+
     .hero {
         padding: 40px 15px;
     }
@@ -278,12 +283,9 @@ footer {
     }
 
     .timeline-card {
-        width: 95%;
+        width: 90%;
+        margin: 15px auto;
         padding: 20px;
-    }
-
-    body {
-        font-size: 15px;
     }
 
     footer {
