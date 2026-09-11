@@ -13,7 +13,10 @@ body {
 
 /* Hero section */
 .hero {
-    background: linear-gradient(135deg, #0068b5, #00a3e0), url("images/timeline 2.webp");
+    background: linear-gradient(rgba(0, 104, 181, 0.75), rgba(0, 163, 224, 0.75)), url("images/timeline 2.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
     text-align: center;
     padding: 70px 20px;
@@ -107,6 +110,19 @@ footer {
     color: white;
     padding: 30px 20px;
     margin-top: 30px;
+}
+
+/* Specificity example: element < class < ID, with the same result. */
+footer p {
+    color: white;
+}
+
+footer .footer-credit {
+    color: white;
+}
+
+footer #footer-credit {
+    color: white;
 }
 
 /* Responsive design */
